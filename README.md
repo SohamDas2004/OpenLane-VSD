@@ -13,33 +13,38 @@ The Google SkyWater 130 PDK is an open-source toolkit for designing computer chi
 Follow the official [OpenLane Documentation](https://openlane.readthedocs.io/en/latest/) to get started. You can discuss OpenLane 2 in the [#openlane-2](https://open-source-silicon.slack.com/archives/C05M85Q5GCF) channel of the [Efabless Open Source Silicon Slack](https://invite.skywater.tools/).
 
 
-### Openlane flow
+## Openlane flow
 
 ![image](https://github.com/user-attachments/assets/87382829-4e6c-4cd7-b2b2-b607e69be934)
 
 
-### Overview of Physical Design flow
+## Overview of Physical Design flow
 
 Place and Route (PnR) is the core of any ASIC implementation and Openlane flow integrates into it several key open source tools which perform each of the respective stages of PnR. Below are the stages and the respective tools (in ( )) that are called by openlane for the functionalities as described:
 
-Synthesis<br>
-    Generating gate-level netlist (yosys).<br>
-    Performing cell mapping (abc).
-    Performing pre-layout STA (OpenSTA).
-Floorplanning
-    Defining the core area for the macro as well as the cell sites and the tracks (init_fp).
-    Placing the macro input and output ports (ioplacer).
-    Generating the power distribution network (pdn).
-Placement
-    Performing global placement (RePLace).
-    Perfroming detailed placement to legalize the globally placed components (OpenDP).
-Clock Tree Synthesis (CTS)
-    Synthesizing the clock tree (TritonCTS).
-Routing
-    Performing global routing to generate a guide file for the detailed router (FastRoute).
-    Performing detailed routing (TritonRoute)
-GDSII Generation
-    Streaming out the final GDSII layout file from the routed def (Magic).
+- **Synthesis**
+  - Generating gate-level netlist ([yosys](https://github.com/YosysHQ/yosys)).
+  - Performing cell mapping ([abc](https://github.com/berkeley-abc/abc)).
+  - Performing pre-layout STA ([OpenSTA](https://github.com/The-OpenROAD-Project/OpenSTA)).
+
+- **Floorplanning**
+  - Defining the core area for the macro as well as the cell sites and the tracks ([init_fp](https://github.com/The-OpenROAD-Project/OpenLane/blob/master/script/init_fp.tcl)).
+  - Placing the macro input and output ports ([ioPlacer](https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/src/ioPlacer)).
+  - Generating the power distribution network ([pdn](https://github.com/The-OpenROAD-Project/OpenLane/blob/master/script/gen_pdn.tcl)).
+
+- **Placement**
+  - Performing global placement ([RePlAce](https://github.com/The-OpenROAD-Project/RePlAce)).
+  - Performing detailed placement to legalize the globally placed components ([OpenDP](https://github.com/The-OpenROAD-Project/OpenDP)).
+
+- **Clock Tree Synthesis (CTS)**
+  - Synthesizing the clock tree ([TritonCTS](https://github.com/The-OpenROAD-Project/TritonCTS)).
+
+- **Routing**
+  - Performing global routing to generate a guide file for the detailed router ([FastRoute](https://github.com/The-OpenROAD-Project/FastRoute)).
+  - Performing detailed routing ([TritonRoute](https://github.com/The-OpenROAD-Project/TritonRoute)).
+
+- **GDSII Generation**
+  - Streaming out the final GDSII layout file from the routed DEF ([Magic](http://opencircuitdesign.com/magic/)).
 
 
 ***
