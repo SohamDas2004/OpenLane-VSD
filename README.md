@@ -1,5 +1,6 @@
 # OpenLane-VSD
 _____________________________________________________________________________________________________________________________________________________________________________________________
+
 ##Introduction
 OpenLane is an ASIC infrastructure library based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, KLayout and a number of custom scripts for design exploration and optimization.
 
@@ -12,4 +13,6 @@ https://github.com/efabless/openlane2/blob/main/Readme.md#try-it-out
 
 
 ## OpenLane Setup
-![image](https://github.com/user-attachments/assets/9efda392-6d6b-4ebd-9862-26f2e8627c21)
+![image](https://github.com/user-attachments/assets/019d217b-2fa7-4262-81ee-741a2803746a)
+
+![image](https://github.com/user-attachments/assets/d61bc839-c071-4e93-9495-638d9bdb6004)
