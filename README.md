@@ -19,7 +19,7 @@ Follow the official [OpenLane Documentation](https://openlane.readthedocs.io/en/
 ## Try it out!
 You can try OpenLane right in your browser, free-of-charge, using Google Colaboratory by following [this link](https://colab.research.google.com/github/efabless/openlane2/blob/main/notebook.ipynb).
 
-__________________________________________________________________________________________________________________________________________________________________________________________s
+***
 
 ## OpenLane Setup 
 ![Screenshot 2025-05-28 112344](https://github.com/user-attachments/assets/b0d86a27-c753-4c9b-b213-74a1a9e1a05f)
