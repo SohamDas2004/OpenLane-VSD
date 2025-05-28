@@ -36,6 +36,14 @@ OpenLane is <b>successfully</b> run. Here is what it looks like.
 ![Screenshot 2025-05-28 112820](https://github.com/user-attachments/assets/467fc065-e851-4514-91c8-5dc5a65ac4de)
 
 
+## Tech File Exploration
+
+Now we will delve into some of the deafult configurations which skywater130nm pdk provides.
+For example, below are the default settings found for floorplanning in the openlane configurations.
+
+![Screenshot 2025-05-28 121521](https://github.com/user-attachments/assets/3939eb04-88b9-476d-88e5-1224e49990ec)
+
+
 In the terminal, the below command is run to see the floorplan in Magic vlsi. Note that the placement is yet to be done.
 <pre>magic -T /Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &</pre>
 
