@@ -31,7 +31,10 @@ You can try OpenLane right in your browser, free-of-charge, using Google Colabor
 In the terminal, the below command is run to see the floorplan in Magic vlsi. Note that the placement is yet to be done.
 <pre>magic -T /Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &</pre>
 
-file:///home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/28-05_06-03/results/placement/picorv32a.placement.def.png![image](https://github.com/user-attachments/assets/362d3511-fb0d-4bbd-b21d-3b9ec26e01d7)
+
+Below is the post-placement png image:
+
+![image](https://github.com/user-attachments/assets/362d3511-fb0d-4bbd-b21d-3b9ec26e01d7)
 
 
 ![image](https://github.com/user-attachments/assets/019d217b-2fa7-4262-81ee-741a2803746a)
