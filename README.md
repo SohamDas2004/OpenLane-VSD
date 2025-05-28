@@ -22,8 +22,8 @@ Follow the official [OpenLane Documentation](https://openlane.readthedocs.io/en/
 
 Place and Route (PnR) is the core of any ASIC implementation and Openlane flow integrates into it several key open source tools which perform each of the respective stages of PnR. Below are the stages and the respective tools (in ( )) that are called by openlane for the functionalities as described:
 
-Synthesis
-    Generating gate-level netlist (yosys).
+Synthesis<br>
+    Generating gate-level netlist (yosys).<br>
     Performing cell mapping (abc).
     Performing pre-layout STA (OpenSTA).
 Floorplanning
