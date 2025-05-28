@@ -102,3 +102,19 @@ Below is the image of the same in Magic VLSI.
 ![image](https://github.com/user-attachments/assets/019d217b-2fa7-4262-81ee-741a2803746a)
 
 ![image](https://github.com/user-attachments/assets/d61bc839-c071-4e93-9495-638d9bdb6004)
+
+
+***
+
+Here we are majorly focused on the inverter simulations. We alredy have the inverter ready. 
+The repo is cloned into our system through this [link](https://github.com/nickson-jose/vsdstdcelldesign.git) in the below mentioned directory
+
+<pre>/home/vsduser/Desktop/work/tools/openlane_working_dir/openlane</pre>
+
+Commands given: 
+<pre>git clone https://github.com/nickson-jose/vsdstdcelldesign.git</pre>
+
+Here we have the mag file of the inverter ready.
+
+![image](https://github.com/user-attachments/assets/e445e921-4f03-4bed-991f-9e634625910a)
+
