@@ -7,7 +7,7 @@ A reference flow, "Classic", performs all ASIC implementation steps from RTL all
 A Process Design Kit (PDK) is a set of files used within the semiconductor industry to model a fabrication process for the design tools used to design an integrated circuit. Here we are using:  
 ![image](https://github.com/user-attachments/assets/b731135d-79bc-45c8-b96c-9bc06282ff1c)
 
-You can find the documentation here --> https://openlane2.readthedocs.io/en/latest/getting_started/ to get started. You can discuss OpenLane 2 in the #openlane-2 channel of the Efabless Open Source Silicon Slack.
+You can find the documentation [here](https://openlane2.readthedocs.io/en/latest/getting_started/) to get started. You can discuss OpenLane 2 in the #openlane-2 channel of the Efabless Open Source Silicon Slack.
 
 https://github.com/efabless/openlane2/blob/main/Readme.md#try-it-out
 
