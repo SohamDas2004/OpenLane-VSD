@@ -18,11 +18,13 @@ Follow the official [OpenLane Documentation](https://openlane.readthedocs.io/en/
 ![Screenshot 2025-05-28 114823](https://github.com/user-attachments/assets/8a89d2f4-3fa4-471d-ad96-6e2b28a51b17)
 
 
+***
+
 ## Try it out!
 You can try OpenLane right in your browser, free-of-charge, using Google Colaboratory by following [this link](https://colab.research.google.com/github/efabless/openlane2/blob/main/notebook.ipynb).
 
 ***
-***
+
 
 ## OpenLane Setup 
 
@@ -30,6 +32,10 @@ You can try OpenLane right in your browser, free-of-charge, using Google Colabor
 
 In the terminal, the below command is run to see the floorplan in Magic vlsi. Note that the placement is yet to be done.
 <pre>magic -T /Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &</pre>
+
+Below is the png image of the core after floorplan is done.
+
+![image](https://github.com/user-attachments/assets/b9542a1e-9815-4084-adfe-c332c954e853)
 
 
 Below is the post-placement png image:
