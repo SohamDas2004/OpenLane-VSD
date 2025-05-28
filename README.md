@@ -10,7 +10,7 @@ A Process Design Kit (PDK) is a set of files used within the semiconductor indus
 
 Follow the official [OpenLane Documentation](https://openlane.readthedocs.io/en/latest/) to get started. You can discuss OpenLane 2 in the [#openlane-2](https://open-source-silicon.slack.com/archives/C05M85Q5GCF) channel of the [Efabless Open Source Silicon Slack](https://invite.skywater.tools/).
 
-###The ASIC Design Flow
+### The ASIC Design Flow
 ![Screenshot 2025-05-28 114823](https://github.com/user-attachments/assets/8a89d2f4-3fa4-471d-ad96-6e2b28a51b17)
 
 ## Try it out!
