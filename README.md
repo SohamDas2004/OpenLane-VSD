@@ -13,9 +13,33 @@ The Google SkyWater 130 PDK is an open-source toolkit for designing computer chi
 Follow the official [OpenLane Documentation](https://openlane.readthedocs.io/en/latest/) to get started. You can discuss OpenLane 2 in the [#openlane-2](https://open-source-silicon.slack.com/archives/C05M85Q5GCF) channel of the [Efabless Open Source Silicon Slack](https://invite.skywater.tools/).
 
 
-### The ASIC Design Flow
+### Openlane flow
 
-![Screenshot 2025-05-28 114823](https://github.com/user-attachments/assets/8a89d2f4-3fa4-471d-ad96-6e2b28a51b17)
+![image](https://github.com/user-attachments/assets/87382829-4e6c-4cd7-b2b2-b607e69be934)
+
+
+### Overview of Physical Design flow
+
+Place and Route (PnR) is the core of any ASIC implementation and Openlane flow integrates into it several key open source tools which perform each of the respective stages of PnR. Below are the stages and the respective tools (in ( )) that are called by openlane for the functionalities as described:
+
+Synthesis
+    Generating gate-level netlist (yosys).
+    Performing cell mapping (abc).
+    Performing pre-layout STA (OpenSTA).
+Floorplanning
+    Defining the core area for the macro as well as the cell sites and the tracks (init_fp).
+    Placing the macro input and output ports (ioplacer).
+    Generating the power distribution network (pdn).
+Placement
+    Performing global placement (RePLace).
+    Perfroming detailed placement to legalize the globally placed components (OpenDP).
+Clock Tree Synthesis (CTS)
+    Synthesizing the clock tree (TritonCTS).
+Routing
+    Performing global routing to generate a guide file for the detailed router (FastRoute).
+    Performing detailed routing (TritonRoute)
+GDSII Generation
+    Streaming out the final GDSII layout file from the routed def (Magic).
 
 
 ***
