@@ -24,6 +24,8 @@ You can try OpenLane right in your browser, free-of-charge, using Google Colabor
 ## OpenLane Setup 
 ![Screenshot 2025-05-28 112344](https://github.com/user-attachments/assets/b0d86a27-c753-4c9b-b213-74a1a9e1a05f)
 
+<pre>magic -T /Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &</pre>
+
 ![image](https://github.com/user-attachments/assets/019d217b-2fa7-4262-81ee-741a2803746a)
 
 ![image](https://github.com/user-attachments/assets/d61bc839-c071-4e93-9495-638d9bdb6004)
