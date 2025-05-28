@@ -118,3 +118,9 @@ Here we have the mag file of the inverter ready.
 
 ![image](https://github.com/user-attachments/assets/e445e921-4f03-4bed-991f-9e634625910a)
 
+
+Now the final inverter layout is observed. 
+
+![image](https://github.com/user-attachments/assets/85706177-50d9-4114-9879-73b2e93eed77)
+
+
