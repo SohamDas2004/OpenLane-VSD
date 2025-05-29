@@ -144,6 +144,17 @@ Now the final inverter layout is observed.
 ![image](https://github.com/user-attachments/assets/85706177-50d9-4114-9879-73b2e93eed77)
 <br>
 ![image](https://github.com/user-attachments/assets/21380a57-8f11-43f7-ad9d-796a4962d67b)
+<br> 
 
+## Ngspice Simulations
+
+It is to be noted that ngspice was needed to be installed in the specified directory.
+<br>
+<pre>sudo apt install ngspice</pre>
+<br>
+![image](https://github.com/user-attachments/assets/5ad4fa08-fcaa-473d-9259-ad2275ea02a3)
+<br>
+Now we can plot various graphs.
+<br>
 
 
