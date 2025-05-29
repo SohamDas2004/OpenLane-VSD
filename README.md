@@ -154,9 +154,14 @@ It is to be noted that ngspice was needed to be installed in the specified direc
 Command in terminal:
 <pre>sudo apt install ngspice</pre>
 <br>
+sky130_inv.spice file was modified as below:
+<br>
 
+![image](https://github.com/user-attachments/assets/dd2da34d-f9d1-4574-ba66-28692f27ffd3)
+<br>
+Simulation setup is done and well running.
+<br>
 ![image](https://github.com/user-attachments/assets/f924d91b-d621-4b80-ba11-4aa0ef89cad3)
-
 <br>
 Now we can plot various graphs.
 <br>
