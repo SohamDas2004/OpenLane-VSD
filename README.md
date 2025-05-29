@@ -170,7 +170,7 @@ Now we can plot various graphs.
 
 Upon running command in ngspice:
 <pre>plot y vs time a</pre>
-The below graph is obtained and is the required <b>transient response of an inverter<b>.
+The below graph is obtained and is the required <b>transient response of an inverter</b>.
 <br>
 
 ![image](https://github.com/user-attachments/assets/8f30b181-29ed-4f83-aac0-a1bd4cfa727d)
@@ -182,16 +182,12 @@ The below graph is obtained and is the required <b>transient response of an inve
 <br>
 Rise transition: time taken by output wave to transit from a value of 20% of its max value to 80% of max value.
 <br>
-
 Fall transition: time taken by output wave to transit from a value of 80% of its max value to 20% of max value.
 <br>
-
 Fall Cell Delay: difference between time period when input has fallen to its 50% and output has risen to its 50%.
 <br>
-
 Rise Cell Delay: difference between time period when output has fallen to its 50% and input has risen to its 50%.
 <br>
-
 Rise time obtained by the difference:
 <br>
 
