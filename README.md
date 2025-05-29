@@ -79,7 +79,21 @@ For example, below are the default settings found in the openlane configurations
 Here are the defaults for floorplan found in floorplan.tcl file
 
 ![image](https://github.com/user-attachments/assets/972067fa-c4a6-4f3f-bbd1-ea0cca75dbfb)
+<br>
 
+## Finding Flop ratio
+The general rule of thumb is: dff_count / total_number_of_cells <br>
+We have done it for our case here:<br>
+![image](https://github.com/user-attachments/assets/93904a21-dc3a-4c8e-88a3-78bfbfa3a12f)
+
+<br>
+At the very end the core area is also observed:<br>
+![image](https://github.com/user-attachments/assets/846f3d05-e843-443b-bb81-07e383703d01)
+
+
+
+## Viewing the floorplan and placement 
+<br>
 
 In the terminal, the below command is run to see the floorplan in Magic vlsi. Note that the placement is yet to be done.
 <pre>magic -T /Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &</pre>
