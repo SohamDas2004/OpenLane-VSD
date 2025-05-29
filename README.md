@@ -61,12 +61,14 @@ You can try OpenLane right in your browser, free-of-charge, using Google Colabor
 
 ![Screenshot 2025-05-28 112344](https://github.com/user-attachments/assets/b0d86a27-c753-4c9b-b213-74a1a9e1a05f)
 
+<br>
 
-OpenLane is <b>successfully</b> run. Here is what it looks like.
+OpenLane is <b>successfully</b> run.
 
 ![Screenshot 2025-05-28 112820](https://github.com/user-attachments/assets/467fc065-e851-4514-91c8-5dc5a65ac4de)
 
 <br>
+
 ## Tech File Exploration
 
 Now we will delve into some of the deafult configurations which skywater130nm pdk provides.
