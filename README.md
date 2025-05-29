@@ -156,6 +156,7 @@ Command in terminal:
 <br>
 sky130_inv.spice file was modified as below:
 <br>
+
 ![image](https://github.com/user-attachments/assets/dd2da34d-f9d1-4574-ba66-28692f27ffd3)
 <br>
 
