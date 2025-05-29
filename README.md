@@ -148,11 +148,15 @@ Now the final inverter layout is observed.
 
 ## Ngspice Simulations
 
-It is to be noted that ngspice was needed to be installed in the specified directory.
+It is to be noted that ngspice was needed to be installed in the specified directory. 
+<pre>~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign</pre>
 <br>
+Command in terminal:
 <pre>sudo apt install ngspice</pre>
 <br>
-![image](https://github.com/user-attachments/assets/5ad4fa08-fcaa-473d-9259-ad2275ea02a3)
+
+![image](https://github.com/user-attachments/assets/f924d91b-d621-4b80-ba11-4aa0ef89cad3)
+
 <br>
 Now we can plot various graphs.
 <br>
