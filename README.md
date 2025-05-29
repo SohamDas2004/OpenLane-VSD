@@ -12,11 +12,12 @@ The [Google SkyWater 130 PDK](https://github.com/google/skywater-pdk.git) is an 
 
 Follow the official [OpenLane Documentation](https://openlane.readthedocs.io/en/latest/) to get started. You can discuss OpenLane 2 in the [#openlane-2](https://open-source-silicon.slack.com/archives/C05M85Q5GCF) channel of the [Efabless Open Source Silicon Slack](https://invite.skywater.tools/).
 
+<br>
 
 ## Openlane flow
 
 ![image](https://github.com/user-attachments/assets/87382829-4e6c-4cd7-b2b2-b607e69be934)
-
+ <br>
 
 ## Overview of Physical Design flow
 
@@ -54,6 +55,7 @@ You can try OpenLane right in your browser, free-of-charge, using Google Colabor
 
 ***
 
+<br>
 
 ## OpenLane Setup 
 
@@ -64,7 +66,7 @@ OpenLane is <b>successfully</b> run. Here is what it looks like.
 
 ![Screenshot 2025-05-28 112820](https://github.com/user-attachments/assets/467fc065-e851-4514-91c8-5dc5a65ac4de)
 
-
+<br>
 ## Tech File Exploration
 
 Now we will delve into some of the deafult configurations which skywater130nm pdk provides.
