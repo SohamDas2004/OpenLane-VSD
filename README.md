@@ -168,4 +168,13 @@ Simulation setup is done and well running.
 Now we can plot various graphs.
 <br>
 
+Upon running command in ngspice:
+<pre>plot y vs time a</pre>
+The below graph is obtained and is the required one.
+<br>
+
+![image](https://github.com/user-attachments/assets/8f30b181-29ed-4f83-aac0-a1bd4cfa727d)
+
+<br>
+
 
