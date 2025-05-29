@@ -179,6 +179,7 @@ The below graph is obtained and is the required <b>transient response of an inve
 
 ### Looking into paramters
 <br>
+
 1. Rise transition: time taken by output wave to transit from a value of 20% of its max value to 80% of max value.
 <br>
 2. Fall transition: time taken by output wave to transit from a value of 80% of its max value to 20% of max value.
