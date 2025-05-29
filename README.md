@@ -87,7 +87,8 @@ We have done it for our case here:<br>
 ![image](https://github.com/user-attachments/assets/93904a21-dc3a-4c8e-88a3-78bfbfa3a12f)
 
 <br>
-At the very end the core area is also observed:<br>
+At the very end the chip area is also observed:<br>
+
 ![image](https://github.com/user-attachments/assets/846f3d05-e843-443b-bb81-07e383703d01)
 
 
