@@ -142,5 +142,8 @@ Here we have the mag file of the inverter ready.
 Now the final inverter layout is observed. 
 
 ![image](https://github.com/user-attachments/assets/85706177-50d9-4114-9879-73b2e93eed77)
+<br>
+![image](https://github.com/user-attachments/assets/21380a57-8f11-43f7-ad9d-796a4962d67b)
+
 
 
