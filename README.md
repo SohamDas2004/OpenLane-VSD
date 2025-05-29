@@ -170,7 +170,7 @@ Now we can plot various graphs.
 
 Upon running command in ngspice:
 <pre>plot y vs time a</pre>
-The below graph is obtained and is the required one.
+The below graph is obtained and is the required <b>transient response of an inverter<b>.
 <br>
 
 ![image](https://github.com/user-attachments/assets/8f30b181-29ed-4f83-aac0-a1bd4cfa727d)
