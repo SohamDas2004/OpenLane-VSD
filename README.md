@@ -47,8 +47,7 @@ Place and Route (PnR) is the core of any ASIC implementation and Openlane flow i
 - **GDSII Generation**
   - Streaming out the final GDSII layout file from the routed DEF ([Magic](http://opencircuitdesign.com/magic/)).
 
-
-***
+<br>
 
 ## Try it out!
 You can try OpenLane right in your browser, free-of-charge, using Google Colaboratory by following [this link](https://colab.research.google.com/github/efabless/openlane2/blob/main/notebook.ipynb).
@@ -109,7 +108,9 @@ Below is the image of the same in Magic VLSI.
 
 
 ***
+<br>
 
+## Installing Inverter layout
 Here we are majorly focused on the inverter simulations. We alredy have the inverter ready. 
 The repo is cloned into our system through this [link](https://github.com/nickson-jose/vsdstdcelldesign.git) in the below mentioned directory
 
