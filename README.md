@@ -177,4 +177,30 @@ The below graph is obtained and is the required <b>transient response of an inve
 
 <br>
 
+### Looking into paramters
+<br>
+1. Rise transition: time taken by output wave to transit from a value of 20% of its max value to 80% of max value.
+<br>
+2. Fall transition: time taken by output wave to transit from a value of 80% of its max value to 20% of max value.
+<br>
+3. Fall Cell Delay: difference between time period when input has fallen to its 50% and output has risen to its 50%.
+<br>
+4. Rise Cell Delay: difference between time period when output has fallen to its 50% and input has risen to its 50%.
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
