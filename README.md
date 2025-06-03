@@ -230,6 +230,7 @@ Rise time obtained by the difference:
 ## Conclusion 
 
 This documentation serves as a comprehensive walkthrough of the digital ASIC design backend flow using open-source tools and the Sky130 PDK. From RTL to GDSII, each stage has been detailed with supporting visuals, real tool outputs, and practical insights.
+
 <br>
 
  ## Key Takeaways:
@@ -238,6 +239,7 @@ This documentation serves as a comprehensive walkthrough of the digital ASIC des
 - Hands-on application of the OpenLane flow for physical design automation.
 - Deep insights into timing analysis, power planning, antenna effects, and routing challenges.
 - Exposure to the SkyWater 130nm process and characterization fundamentals.
+- 
 <br>
 
 ##  References:
