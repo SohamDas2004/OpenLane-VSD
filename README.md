@@ -225,15 +225,14 @@ Rise time obtained by the difference:
 | 15 | Via1                              | Connects Metal1 to Metal2.                                             |
 | 16 | Metal2                            | Second layer of metal interconnect.                                    |
 <br>
-
-
 <br>
+
 ## Conclusion 
 
 This documentation serves as a comprehensive walkthrough of the digital ASIC design backend flow using open-source tools and the Sky130 PDK. From RTL to GDSII, each stage has been detailed with supporting visuals, real tool outputs, and practical insights.
 <br>
 
- ## Key takeaways:
+ ## Key Takeaways:
 
 - Understanding of open-source RTL and EDA tools like Yosys, OpenROAD, and Magic.
 - Hands-on application of the OpenLane flow for physical design automation.
@@ -244,7 +243,7 @@ This documentation serves as a comprehensive walkthrough of the digital ASIC des
 ##  References:
 
 Special thanks to VSD, OpenLane, SkyWater, and the entire open-source hardware community for enabling such accessible learning platforms.<br>
->https://www.vlsisystemdesign.com/digital-vlsi-soc-design-and-planning/
+>>https://www.vlsisystemdesign.com/digital-vlsi-soc-design-and-planning/
 
 
 
