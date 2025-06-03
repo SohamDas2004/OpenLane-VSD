@@ -114,7 +114,7 @@ Below is the png image of the core after floorplan is done.
 
 Below is the post-placement png image:
 
-![image](https://github.com/user-attachments/assets/362d3511-fb0d-4bbd-b21d-3b9ec26e01d7)
+<img src="https://github.com/user-attachments/assets/362d3511-fb0d-4bbd-b21d-3b9ec26e01d7" alt="image" width="700" height="700">
 
 
 Below is the image of the same in Magic VLSI.
