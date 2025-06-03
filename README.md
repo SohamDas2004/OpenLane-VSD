@@ -202,6 +202,7 @@ Rise time obtained by the difference:
 
 ![image](https://github.com/user-attachments/assets/d9ba8485-47c1-4e12-ba8b-55ba438562d9)
 <br>
+<br>
 
 ## The 16 Mask Process
 
@@ -223,9 +224,27 @@ Rise time obtained by the difference:
 | 14 | Metal1                            | First layer of metal interconnect.                                     |
 | 15 | Via1                              | Connects Metal1 to Metal2.                                             |
 | 16 | Metal2                            | Second layer of metal interconnect.                                    |
+<br>
 
 
 <br>
+## Conclusion 
+
+This documentation serves as a comprehensive walkthrough of the digital ASIC design backend flow using open-source tools and the Sky130 PDK. From RTL to GDSII, each stage has been detailed with supporting visuals, real tool outputs, and practical insights.
+<br>
+
+ ## Key takeaways:
+
+- Understanding of open-source RTL and EDA tools like Yosys, OpenROAD, and Magic.
+- Hands-on application of the OpenLane flow for physical design automation.
+- Deep insights into timing analysis, power planning, antenna effects, and routing challenges.
+- Exposure to the SkyWater 130nm process and characterization fundamentals.
+<br>
+
+##  References:
+
+Special thanks to VSD, OpenLane, SkyWater, and the entire open-source hardware community for enabling such accessible learning platforms.<br>
+>https://www.vlsisystemdesign.com/digital-vlsi-soc-design-and-planning/
 
 
 
