@@ -56,6 +56,11 @@ You can try OpenLane right in your browser, free-of-charge, using Google Colabor
 
 <br>
 
+## Motive
+We will use the <b>PicoRV32</b> — a small and stable RISC-V core — as our RTL design for this backend flow.
+<br>
+Additionally, we will create a standard cell library that will be used to generate the netlist from the RTL code. We will analyze critical aspects of the design, such as hold time, setup time, and more.
+<br> <br>
 ## OpenLane Setup 
 
 ![Screenshot 2025-05-28 112344](https://github.com/user-attachments/assets/b0d86a27-c753-4c9b-b213-74a1a9e1a05f)
@@ -198,7 +203,29 @@ Rise time obtained by the difference:
 ![image](https://github.com/user-attachments/assets/d9ba8485-47c1-4e12-ba8b-55ba438562d9)
 <br>
 
+## The 16 Mask Process
 
+| #  | Mask Name                         | Purpose                                                                 |
+|----|----------------------------------|-------------------------------------------------------------------------|
+| 1  | Active (Active Area or Diffusion) | Defines where diffusion (source/drain) can occur.                      |
+| 2  | N-Well                            | Defines n-well areas for PMOS transistors.                             |
+| 3  | P-Well                            | Defines p-well areas for NMOS transistors (in twin-tub process).       |
+| 4  | Field Oxide (LOCOS/Isolation)     | Isolation regions via field oxide or STI.                              |
+| 5  | Threshold Adjustment (VT)         | For selective threshold voltage implantations.                         |
+| 6  | Channel Stop                      | Prevents leakage by doping field regions.                              |
+| 7  | Poly (Gate)                       | Defines polysilicon gates of transistors.                              |
+| 8  | Lightly Doped Drain (LDD) N+      | Forms lightly doped n-type extension for NMOS.                         |
+| 9  | Lightly Doped Drain (LDD) P+      | Forms lightly doped p-type extension for PMOS.                         |
+| 10 | Spacer Etch (Sidewall Spacers)    | Defines oxide spacers for self-alignment.                              |
+| 11 | Source/Drain N+                   | Heavily doped n-type source/drain (NMOS).                              |
+| 12 | Source/Drain P+                   | Heavily doped p-type source/drain (PMOS).                              |
+| 13 | Contact                           | Defines contact holes between metal and active regions.                |
+| 14 | Metal1                            | First layer of metal interconnect.                                     |
+| 15 | Via1                              | Connects Metal1 to Metal2.                                             |
+| 16 | Metal2                            | Second layer of metal interconnect.                                    |
+
+
+<br>
 
 
 
