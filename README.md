@@ -107,10 +107,8 @@ In the terminal, the below command is run to see the floorplan in Magic vlsi. No
 
 Below is the png image of the core after floorplan is done.
 
-<img src="https://github.com/user-attachments/assets/b9542a1e-9815-4084-adfe-c332c954e853" alt="image" width="500" height="300">
+<img src="https://github.com/user-attachments/assets/b9542a1e-9815-4084-adfe-c332c954e853" alt="image" width="700" height="700">
 <br>
-![image](https://github.com/user-attachments/assets/b9542a1e-9815-4084-adfe-c332c954e853)
-
 
 ***
 
