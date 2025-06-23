@@ -276,8 +276,33 @@ for the lab we need to download the lab files, which can be done through this co
 
 ## Steps to configure OpenSTA for Post-synthesis Timing Analysis
 
-![image](https://github.com/user-attachments/assets/59f548dc-2ff6-4c9f-9534-de12ae93fb90)
+We will give the following commmands in the terminal in openlane directory
 
+<pre> prep -design picorv32a -tag 01-04_12-54 -overwrite
+
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+
+add_lefs -src $lefs
+
+echo $::env(SYNTH_STRATEGY)
+
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+
+echo $::env(SYNTH_BUFFERING)
+
+echo $::env(SYNTH_SIZING)
+
+set ::env(SYNTH_SIZING) 1
+
+echo $::env(SYNTH_DRIVING_CELL)
+
+run_synthesis  </pre>
+
+<pre>prep -design picorv32a -tag 01-04_12-54 -overwrite </pre> is used to overwrite the existing files with previous values of simulations.
+
+After synthesis, we have observed that the slack is nagative.
+
+<br>
 
 ## Conclusion 
 
