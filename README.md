@@ -259,10 +259,24 @@ Rise time obtained by the difference:
 | 16 | Metal2                            | Second layer of metal interconnect.                                    |
 <br>
 
+<img src="https://github.com/user-attachments/assets/7f31a0f6-cd1b-4acc-80d4-3b2eb4ca559a" alt="image" width="700" height="500">
+
+<br>
+
+## Lab Introduction to Magic Tool Options and DRC Rules by Tim Edward
+
+Link to Google_Skywaters Design Rules: - https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html
+
+For reference , we can use the github repo of Google-Skywater: - https://github.com/google/skywater-pdk
+
+One can read here also : - https://opencircuitdesign.com/magic Specefically section 2,6 of magic tutrial was mentioned.
+
+for the lab we need to download the lab files, which can be done through this command -: wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
 
 
+## Steps to configure OpenSTA for Post-synthesis Timing Analysis
 
-
+![image](https://github.com/user-attachments/assets/59f548dc-2ff6-4c9f-9534-de12ae93fb90)
 
 
 ## Conclusion 
