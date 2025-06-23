@@ -96,7 +96,15 @@ At the very end the chip area is also observed:<br>
 
 ![image](https://github.com/user-attachments/assets/846f3d05-e843-443b-bb81-07e383703d01)
 
+## Looking into Routing and Placement
+<br>
+The first step is to bind the netlist with physical cells i.e. cells with real dimension. These blocks are sourced from a "shelf", known as a library.The library has cells with various shapes, dimensions and also contains information about the delay information. The library contains various sizes of cells with the same functionality too - since bigger cells have lesser resistance.
 
+The second step is PLACEMENT, which is done based on connectivity. As can be seen, flip flop 1 is close to the Din1 pin and flip flop 2 is close to Dout1 pin. Combinational cells are placed in close proximity to FF1 and FF2 as to reduce delay.
+
+<img src="https://github.com/user-attachments/assets/b9c891b1-b1cd-4a83-98a5-3ac6d73c5865" alt="image" width="500" height="500">
+
+<img src="https://github.com/user-attachments/assets/996359d4-387c-4742-9ed6-e4243a691403" alt="image" width="500" height="500">
 
 ## Viewing the floorplan and placement 
 <br>
@@ -127,7 +135,31 @@ Below is the image of the same in Magic VLSI.
 ![image](https://github.com/user-attachments/assets/d61bc839-c071-4e93-9495-638d9bdb6004)
 
 
-***
+##
+
+### Typical Characterization Flow
+
+standard-cell-characterization/
+│
+├── spice_models/
+│   └── sky130_inv.spice              # Example inverter SPICE file
+│
+├── stimuli/
+│   └── input_vectors.pwl             # Input stimulus (PWL or logic)
+│
+├── config/
+│   └── characterization_config.cfg   # Configuration file for the tool
+│
+├── netlist/
+│   └── sky130_inv_extracted.sp       # Netlist extracted from layout or synthesis
+│
+├── outputs/
+│   └── sky130_inv.lib                # Liberty output file
+│
+├── scripts/
+│   ├── run_characterization.py       # Main script to invoke the tool
+│   └── parse_netlist.py              # Parses subcircuits and buffers
+
 <br>
 
 ## Installing Inverter layout
@@ -185,6 +217,13 @@ The below graph is obtained and is the required <b>transient response of an inve
 ## Looking into parameters
 <br>
 
+Here we will consider the below circuit of an inverter: <br>
+
+
+<img src="https://github.com/user-attachments/assets/9460543d-310e-432f-b6e2-b3cd43360b2e" alt="image" width="500" height="500">
+
+<br>
+
 Rise transition: time taken by output wave to transit from a value of 20% of its max value to 80% of max value.
 <br>
 
@@ -196,6 +235,10 @@ Fall Cell Delay: difference between time period when input has fallen to its 50%
 
 Rise Cell Delay: difference between time period when output has fallen to its 50% and input has risen to its 50%.
 <br>
+
+
+<img src="https://github.com/user-attachments/assets/8c2f8730-cf44-4239-af08-81b422215b12" alt="image" width="500" height="500">
+
 
 Rise time obtained by the difference:
 <br> 
