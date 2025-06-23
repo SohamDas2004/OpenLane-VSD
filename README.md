@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/80bdf86c-a6c9-4ac0-b673-3627d5f73d66)# OpenLane-VSD : The Journey 
+# OpenLane-VSD : The Journey 
 
 ## Introduction
 OpenLane is an ASIC infrastructure library based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, KLayout and a number of custom scripts for design exploration and optimization.
@@ -102,11 +102,11 @@ The first step is to bind the netlist with physical cells i.e. cells with real d
 
 The second step is PLACEMENT, which is done based on connectivity. As can be seen, flip flop 1 is close to the Din1 pin and flip flop 2 is close to Dout1 pin. Combinational cells are placed in close proximity to FF1 and FF2 as to reduce delay.
 
-<img src="https://github.com/user-attachments/assets/b9c891b1-b1cd-4a83-98a5-3ac6d73c5865" alt="image" width="600" height="450">   
+<img src="https://github.com/user-attachments/assets/b9c891b1-b1cd-4a83-98a5-3ac6d73c5865" alt="image" width="600" height="350">   
 
 <br>
 
-<img src="https://github.com/user-attachments/assets/996359d4-387c-4742-9ed6-e4243a691403" alt="image" width="600" height="450">
+<img src="https://github.com/user-attachments/assets/996359d4-387c-4742-9ed6-e4243a691403" alt="image" width="600" height="350">
 
 <br>
 
@@ -119,14 +119,14 @@ In the terminal, the below command is run to see the floorplan in Magic vlsi. No
 
 Below is the png image of the core after floorplan is done.
 
-<img src="https://github.com/user-attachments/assets/b9542a1e-9815-4084-adfe-c332c954e853" alt="image" width="600" height="600">
+<img src="https://github.com/user-attachments/assets/b9542a1e-9815-4084-adfe-c332c954e853" alt="image" width="500" height="500">
 <br>
 
 ***
 
 Below is the post-placement png image:
 
-<img src="https://github.com/user-attachments/assets/362d3511-fb0d-4bbd-b21d-3b9ec26e01d7" alt="image" width="600" height="600">
+<img src="https://github.com/user-attachments/assets/362d3511-fb0d-4bbd-b21d-3b9ec26e01d7" alt="image" width="500" height="500">
 
 
 Below is the image of the same in Magic VLSI.
