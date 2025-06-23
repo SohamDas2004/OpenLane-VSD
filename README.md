@@ -434,10 +434,29 @@ Rule 3) Wire Spacing:- The wire spacing between two wires should be as shown in 
 
 <br>
 
+Now let's take the below circuit for example: <br>
+
+![image](https://github.com/user-attachments/assets/4c181843-b7cb-48b5-9884-fa76d6cf256c)
+
+<br>
+
+Solution of this signal short problem is take one of the wire and put it on the other metal layer. usually upper metal is wider than the lower metal.
+
 Rule 1) Via Width:- via width should be some minimum value. <br>
 Rule 2) Via Spacing:- Via spacing should be minimum value. <br>
 
 After routing and DRC the next step is Parasitic extraction. Resistance and capacitance present on every wire should be extracted and use for further process.
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3583b232-9687-4f73-8def-8193680dc7df)
+
+<br>
+
+***
+
+## Power Distribution Network and Routing
+
 
 
 
