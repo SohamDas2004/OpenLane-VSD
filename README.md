@@ -389,17 +389,55 @@ Because of the wire length we did not get the same wave form at ouput as input a
 ![image](https://github.com/user-attachments/assets/7354ef03-c191-4b4b-9c87-58f966413098)
 
 <br>
-<br>
 
 ***
 
-## 
+## Routing and design rule check (DRC):  Intro to Maze routing using Lee's Algorithm
 
+<b>Maze-Routing(Lee's Algorithm):-</b> Therse should not be zig-zag lines of connections most of the connections should be in L shape or in Z shape. So according to algorithm first it create some grids and grids are routing at the backend. It's called as routing grid. There are some numbers of grids on this routig having some dimensions. SO here we are having two points one is 'Source' and the other is 'Target'. With the help of this routing grid algorithm has to find out the best possible way between them.
 
+First step is algorithm tries to lable all of the grids surrounded. Only the adjacent horizontal and vertical grids are labeled not the digonal one as shown in the image below. <br>
 
+![image](https://github.com/user-attachments/assets/f820252b-42df-40d0-9c13-daef3dfe827b)
 
+<br>
 
+SO now there are so many ways to reach to target from source but we have to choose the best shortest possible way to reach the target.And we need to avoid the zig-zag way better to cghoose 'L' shape routing'. 
 
+<br>
+
+![image](https://github.com/user-attachments/assets/1837e8fd-7fc5-4ee8-85e0-8e0e65ad4b0d)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6c34030c-6a00-4812-807f-1fb5330540fa)
+
+<br>
+
+## Design Rule Check
+
+Rule 1) Wire width:- Width of the wire should be minimum that derived from the optical wavelenth of lithography technique applied.
+
+![image](https://github.com/user-attachments/assets/93d00a4f-88d2-493f-8873-aebe82bae1d5)
+
+Rule 2) Wire Pitch:- The minimum pitch between two wire should be this much as shown in the figure below.
+
+![image](https://github.com/user-attachments/assets/83435949-aeb8-452b-84cf-828bec404e5a)
+
+Rule 3) Wire Spacing:- The wire spacing between two wires should be as shown in the image below.
+
+![image](https://github.com/user-attachments/assets/efd60d6c-ce7c-4392-aa71-f5d36ee58f83)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/46a13f38-757c-4421-826c-09256df0435d)
+
+<br>
+
+Rule 1) Via Width:- via width should be some minimum value. <br>
+Rule 2) Via Spacing:- Via spacing should be minimum value. <br>
+
+After routing and DRC the next step is Parasitic extraction. Resistance and capacitance present on every wire should be extracted and use for further process.
 
 
 
