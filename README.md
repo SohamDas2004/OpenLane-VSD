@@ -278,7 +278,7 @@ for the lab we need to download the lab files, which can be done through this co
 
 We will give the following commmands in the terminal in openlane directory
 
-<pre> prep -design picorv32a -tag 01-04_12-54 -overwrite
+<pre>prep -design picorv32a -tag 01-04_12-54 -overwrite
 
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 
@@ -298,11 +298,38 @@ echo $::env(SYNTH_DRIVING_CELL)
 
 run_synthesis  </pre>
 
-<pre>prep -design picorv32a -tag 01-04_12-54 -overwrite </pre> is used to overwrite the existing files with previous values of simulations.
+<pre>prep -design picorv32a -tag 01-04_12-54 -overwrite </pre> is used to overwrite the existing files with previous values of simulations. After synthesis, we have observed that the slack is <b>negative</b>.
 
-After synthesis, we have observed that the slack is nagative.
+Now run_synthesis we will see chip area has incresed and the value of slack has reduced. Since synthesis of the picorv32a is successful, so we will run the floorplan using command run_floorplan
+<br>
+
+![image](https://github.com/user-attachments/assets/ea33c8ca-eac0-43b4-bbca-f8d2e8187223)
 
 <br>
+Since, we are getting the error so first again we have to do the synthesis using the commands mentioned earlier and then we will use following commands to do the floorplan,
+
+<pre>init_floorplan
+
+place_io
+
+tap_decap_or </pre>
+
+now we are good to run_placement. <br>
+
+![image](https://github.com/user-attachments/assets/30f00330-228c-468d-bc39-c711c9acb489)
+
+<br>  <b>Here placement is succesfull now without any error. </b>
+
+![image](https://github.com/user-attachments/assets/b19a1a56-9d0a-4253-9310-e14f29ccf535)
+
+<br>
+
+## Lab steps to Optimize synthesis to reduce setup violations
+
+
+
+
+
 
 ## Conclusion 
 
