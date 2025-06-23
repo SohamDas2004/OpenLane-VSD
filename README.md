@@ -139,27 +139,20 @@ Below is the image of the same in Magic VLSI.
 
 ### Typical Characterization Flow
 
-standard-cell-characterization/
-│
-├── spice_models/
-│   └── sky130_inv.spice              # Example inverter SPICE file
-│
-├── stimuli/
-│   └── input_vectors.pwl             # Input stimulus (PWL or logic)
-│
-├── config/
-│   └── characterization_config.cfg   # Configuration file for the tool
-│
-├── netlist/
-│   └── sky130_inv_extracted.sp       # Netlist extracted from layout or synthesis
-│
-├── outputs/
-│   └── sky130_inv.lib                # Liberty output file
-│
-├── scripts/
-│   ├── run_characterization.py       # Main script to invoke the tool
-│   └── parse_netlist.py              # Parses subcircuits and buffers
+# Standard Cell Characterization
 
+The standard cell characterization process involves the following steps:
+
+1. Reading SPICE model files containing device-level parameters.
+2. Importing the netlist extracted from SPICE simulations.
+3. Identifying buffer behavior to understand drive strength and signal propagation.
+4. Parsing subcircuits defined in the SPICE hierarchy.
+5. Connecting required power supplies (VDD and GND) to the circuit.
+6. Applying input stimulus to simulate switching activity.
+7. Adding appropriate output load capacitance to mimic real usage conditions.
+8. Defining simulation control commands (e.g., transient or DC analysis).
+
+The flow is typically driven by a configuration file fed into a characterization tool such as **GUNA**. The tool performs simulations and generates timing, power, and noise models, outputting them in `.lib` (Liberty) format.
 <br>
 
 ## Installing Inverter layout
