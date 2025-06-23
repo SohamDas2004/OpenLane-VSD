@@ -102,9 +102,13 @@ The first step is to bind the netlist with physical cells i.e. cells with real d
 
 The second step is PLACEMENT, which is done based on connectivity. As can be seen, flip flop 1 is close to the Din1 pin and flip flop 2 is close to Dout1 pin. Combinational cells are placed in close proximity to FF1 and FF2 as to reduce delay.
 
-<img src="https://github.com/user-attachments/assets/b9c891b1-b1cd-4a83-98a5-3ac6d73c5865" alt="image" width="500" height="500">
+<img src="https://github.com/user-attachments/assets/b9c891b1-b1cd-4a83-98a5-3ac6d73c5865" alt="image" width="600" height="450">   
 
-<img src="https://github.com/user-attachments/assets/996359d4-387c-4742-9ed6-e4243a691403" alt="image" width="500" height="500">
+<br>
+
+<img src="https://github.com/user-attachments/assets/996359d4-387c-4742-9ed6-e4243a691403" alt="image" width="600" height="450">
+
+<br>
 
 ## Viewing the floorplan and placement 
 <br>
