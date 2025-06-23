@@ -1,4 +1,4 @@
-# OpenLane-VSD : The Journey 
+![image](https://github.com/user-attachments/assets/80bdf86c-a6c9-4ac0-b673-3627d5f73d66)# OpenLane-VSD : The Journey 
 
 ## Introduction
 OpenLane is an ASIC infrastructure library based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, KLayout and a number of custom scripts for design exploration and optimization.
@@ -272,7 +272,9 @@ For reference , we can use the github repo of Google-Skywater: - https://github.
 
 One can read here also : - https://opencircuitdesign.com/magic Specefically section 2,6 of magic tutrial was mentioned.
 
-for the lab we need to download the lab files, which can be done through this command -: wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz <br>
+for the lab we need to download the lab files, which can be done through this command -: wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz 
+
+<br>
 
 
 ## Steps to configure OpenSTA for Post-synthesis Timing Analysis
@@ -325,10 +327,9 @@ now we are good to run_placement. <br>
 
 <br>
 
-
 ## Lab steps to Optimize synthesis to reduce setup violations
 
-
+<br>
 
 Now we will change the FANOUT parameter and again do the synthesis,
 
@@ -346,11 +347,43 @@ echo $::env(SYNTH_DRIVING_CELL)
 
 run_synthesis </pre>
 
+<br>
+
+![image](https://github.com/user-attachments/assets/16297016-7c07-46cb-a4d2-b92f13cb45b8)
 
 
+## Clock Tree Routing and Buffering Using H-Tree Algorithm
+
+<b>Clock tree synthesis:-</b> Let's connect clk1 to FF1 & FF2 of stage 1 and FF1 of stage 3 and FF2 of stage 4 with physical wire. <br>
+
+![image](https://github.com/user-attachments/assets/124c5ee6-d3ff-498c-b6a8-c17a679cd95b)
 
 
+Now let's see what is the problem with this? Let's consider some physical distance from clk to FF1 and FF2 , so due to this t2>t1.
 
+Skew= t2-t1, and skew should be 0ps
+
+![image](https://github.com/user-attachments/assets/cbb81d81-3f6f-4263-bade-4741ba1c0291)
+
+
+Previously we have build bad tree now we will try to modify that in a smarter way. Hrre clk will come in somewhere mid points with this clk will reach to every flip flop at almost same time. In the same way we will connect the clk2 with flip flops like midpoint manner. <br>
+
+![image](https://github.com/user-attachments/assets/9dbe14af-311a-4c90-9bad-92d3dbc265ff)
+
+
+Now will se clock tree synthesis(Buffering), Let's we have some clock route through which it has to reach to particular locations and clock end points and in the path many capacitance, resitors are there. <br>
+
+![image](https://github.com/user-attachments/assets/434ece13-961b-47ea-b876-959cdc42e21b)
+
+<br>
+
+Because of the wire length we did not get the same wave form at ouput as input and bcz of RC networks , so to resolve this problem we use repeaters. The only difference between the repeaters we use for clock or for data path is that clock repeaters repeaters will have equal rise and fall time. <br>
+
+![image](https://github.com/user-attachments/assets/4ce8236a-21d6-4b71-a9b6-8489c98bd101)
+
+<br>
+
+<b>Clock Net Shielding:-</b> Till now we have built the clk tree in such a fashion that the skew between the launch flop and capture flop is 0. Skew means the latency difference between clk ports of the flop pins. Clk net shielding is the critical net scene in the design. We take the particular clk net and shield it means we protect the clk from the outside world, it's like house for tha clk.
 
 ## Conclusion 
 
