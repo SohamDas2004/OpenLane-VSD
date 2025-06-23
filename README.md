@@ -392,9 +392,8 @@ Because of the wire length we did not get the same wave form at ouput as input a
 
 ![image](https://github.com/user-attachments/assets/7354ef03-c191-4b4b-9c87-58f966413098)
 
-<br>
-
 ***
+<br>
 
 ## Routing and design rule check (DRC):  Intro to Maze routing using Lee's Algorithm
 
@@ -455,9 +454,8 @@ After routing and DRC the next step is Parasitic extraction. Resistance and capa
 
 ![image](https://github.com/user-attachments/assets/3583b232-9687-4f73-8def-8193680dc7df)
 
-<br>
-
 ***
+<br>
 
 ## Power Distribution Network and Routing
 
