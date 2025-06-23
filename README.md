@@ -2,8 +2,6 @@
 
 Author: [Soham Das](https://www.linkedin.com/in/soham-das-528aa5287) 
 
-<br>
-
 ## Introduction
 OpenLane is an ASIC infrastructure library based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, KLayout and a number of custom scripts for design exploration and optimization.
 
