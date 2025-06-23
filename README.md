@@ -134,12 +134,9 @@ Below is the image of the same in Magic VLSI.
 
 ![image](https://github.com/user-attachments/assets/d61bc839-c071-4e93-9495-638d9bdb6004)
 
-
-##
+<br>
 
 ### Typical Characterization Flow
-
-# Standard Cell Characterization
 
 The standard cell characterization process involves the following steps:
 
