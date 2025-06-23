@@ -1,5 +1,9 @@
 # OpenLane-VSD : DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING
 
+Author: [SOHAM DAS](https://www.linkedin.com/in/soham-das-528aa5287) 
+
+***
+
 ## Introduction
 OpenLane is an ASIC infrastructure library based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, KLayout and a number of custom scripts for design exploration and optimization.
 
