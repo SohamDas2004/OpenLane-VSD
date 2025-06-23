@@ -405,7 +405,7 @@ First step is algorithm tries to lable all of the grids surrounded. Only the adj
 
 <br>
 
-SO now there are so many ways to reach to target from source but we have to choose the best shortest possible way to reach the target.And we need to avoid the zig-zag way better to cghoose 'L' shape routing'. 
+SO now there are so many ways to reach to target from source but we have to choose the best shortest possible way to reach the target.And we need to avoid the zig-zag way better to choose 'L' shape routing'. 
 
 <br>
 
@@ -459,12 +459,38 @@ After routing and DRC the next step is Parasitic extraction. Resistance and capa
 
 ## Power Distribution Network and Routing
 
+It is shown below how standard cells are powered up :- power/ground pads -> power/ground ring-> power/ground straps -> power/ground rails   <br>
 
+![image](https://github.com/user-attachments/assets/acd78049-1aff-4d84-b6f1-2488bd0e79a5)
 
+<br>
 
+Here green color is representing the chip, and yellow, red and blue boxes are the I/O pins,power and ground pads respectively. Power is transfered to the rings from the pads through the black dots shown in the image on the cross section points of the ring and pads. We have vertical and horizontal tracks which ensures that the power is being transfered from the ring to chip this is shown by the red and blue color. This is how power planing works in physical design of any device.
 
+<br>
 
+The total process of routing is devided into two part.
 
+1. Fast route (Global route)   |   
+2. Detailed Route
+
+In the Global route, the routing region is devided into the rectangular grids cells as shown in the figure above. And it is represented as cores 3D routing graph. Global route is done by FAST route engine.The detailed route is done by TritonRoute engine. 
+
+<br>
+
+![image](https://github.com/user-attachments/assets/1e632264-24c4-499a-a816-13621541655a)
+
+<br>
+
+The algorithm requires the determination of the cost associated with each APC and the calculation of the minimum spanning tree between the APCs to find the optimal points between two APCs. The next step involves post-routing STA analysis, which requires the extraction of parasitic effects (SPEF). Since OpenLANE does not have a SPEF extraction tool, this process needs to be done outside of OpenLANE.
+
+## Final Stage
+
+The last stage will be to extract the GDSII file ready for fabrication. This uses Magic to stream the GDSII file runs/02-06_13-52/results/magic/picorv32a.gds. This GDSII file can then be read by Magic. The last stage is to extract the GDSII file ready for fabrication through run_magic.
+
+***
+
+<br> 
 
 ## Conclusion 
 
