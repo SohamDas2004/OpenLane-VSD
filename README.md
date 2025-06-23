@@ -115,14 +115,14 @@ In the terminal, the below command is run to see the floorplan in Magic vlsi. No
 
 Below is the png image of the core after floorplan is done.
 
-<img src="https://github.com/user-attachments/assets/b9542a1e-9815-4084-adfe-c332c954e853" alt="image" width="700" height="700">
+<img src="https://github.com/user-attachments/assets/b9542a1e-9815-4084-adfe-c332c954e853" alt="image" width="600" height="600">
 <br>
 
 ***
 
 Below is the post-placement png image:
 
-<img src="https://github.com/user-attachments/assets/362d3511-fb0d-4bbd-b21d-3b9ec26e01d7" alt="image" width="700" height="700">
+<img src="https://github.com/user-attachments/assets/362d3511-fb0d-4bbd-b21d-3b9ec26e01d7" alt="image" width="600" height="600">
 
 
 Below is the image of the same in Magic VLSI.
@@ -213,7 +213,7 @@ The below graph is obtained and is the required <b>transient response of an inve
 Here we will consider the below circuit of an inverter: <br>
 
 
-<img src="https://github.com/user-attachments/assets/9460543d-310e-432f-b6e2-b3cd43360b2e" alt="image" width="500" height="500">
+<img src="https://github.com/user-attachments/assets/9460543d-310e-432f-b6e2-b3cd43360b2e" alt="image" width="500" height="300">
 
 <br>
 
@@ -230,7 +230,7 @@ Rise Cell Delay: difference between time period when output has fallen to its 50
 <br>
 
 
-<img src="https://github.com/user-attachments/assets/8c2f8730-cf44-4239-af08-81b422215b12" alt="image" width="500" height="500">
+<img src="https://github.com/user-attachments/assets/8c2f8730-cf44-4239-af08-81b422215b12" alt="image" width="500" height="300">
 
 
 Rise time obtained by the difference:
