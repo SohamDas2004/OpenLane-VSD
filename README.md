@@ -351,6 +351,7 @@ run_synthesis </pre>
 
 ![image](https://github.com/user-attachments/assets/16297016-7c07-46cb-a4d2-b92f13cb45b8)
 
+<br>
 
 ## Clock Tree Routing and Buffering Using H-Tree Algorithm
 
@@ -383,7 +384,28 @@ Because of the wire length we did not get the same wave form at ouput as input a
 
 <br>
 
-<b>Clock Net Shielding:-</b> Till now we have built the clk tree in such a fashion that the skew between the launch flop and capture flop is 0. Skew means the latency difference between clk ports of the flop pins. Clk net shielding is the critical net scene in the design. We take the particular clk net and shield it means we protect the clk from the outside world, it's like house for tha clk.
+<b>Clock Net Shielding:-</b> Till now we have built the clk tree in such a fashion that the skew between the launch flop and capture flop is 0. Skew means the latency difference between clk ports of the flop pins. Clk net shielding is the critical net scene in the design. We take the particular clk net and shield it means we protect the clk from the outside world, it's like house for tha clk. <br>
+
+![image](https://github.com/user-attachments/assets/7354ef03-c191-4b4b-9c87-58f966413098)
+
+<br>
+<br>
+
+***
+
+## 
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Conclusion 
 
