@@ -136,7 +136,8 @@ Below is the image of the same in Magic VLSI.
 
 <br>
 
-### Typical Characterization Flow
+
+## Typical Characterization Flow
 
 The standard cell characterization process involves the following steps:
 
@@ -163,7 +164,7 @@ Commands given:
 
 Here we have the mag file of the inverter ready.
 
-![image](https://github.com/user-attachments/assets/e445e921-4f03-4bed-991f-9e634625910a)
+![image](https://github.com/user-attachments/assets/e445e921-4f03-4bed-991f-9e634625910a) <br>
 
 
 Now the final inverter layout is observed. 
@@ -271,7 +272,7 @@ For reference , we can use the github repo of Google-Skywater: - https://github.
 
 One can read here also : - https://opencircuitdesign.com/magic Specefically section 2,6 of magic tutrial was mentioned.
 
-for the lab we need to download the lab files, which can be done through this command -: wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+for the lab we need to download the lab files, which can be done through this command -: wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz <br>
 
 
 ## Steps to configure OpenSTA for Post-synthesis Timing Analysis
@@ -324,7 +325,27 @@ now we are good to run_placement. <br>
 
 <br>
 
+
 ## Lab steps to Optimize synthesis to reduce setup violations
+
+
+
+Now we will change the FANOUT parameter and again do the synthesis,
+
+<pre> prep -design picorv32a -tag 02-04_05-27 -overwrite
+
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+
+add_lefs -src $lefs
+
+set ::env(SYNTH_SIZING) 1
+
+set ::env(SYNTH_MAX_FANOUT) 4
+
+echo $::env(SYNTH_DRIVING_CELL)
+
+run_synthesis </pre>
+
 
 
 
